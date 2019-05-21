@@ -1,0 +1,162 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 50px;
+  right: 0px;
+  width: 100%;
+  box-shadow: 0px 0px 10px 5px #888888;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
+  background: #e9e9e9;
+  box-shadow: 0px 0px 10px 5px #888888;
+}
+.topnav span {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a,
+  .topnav input[type="text"],
+  .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type="text"] {
+    border: 1px solid #ccc;
+  }
+}
+.listHead {
+  margin-top: 50px;
+  overflow: auto;
+  margin-bottom: 75px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  overflow: scroll;
+  height: 100vh;
+}
+
+tbody > tr:nth-of-type(1) {
+  margin-top: 16px;
+}
+
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color: #fff;
+  background: #4caf50;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+tbody {
+  height: 10em;
+  overflow: scroll;
+}
+td {
+  height: auto;
+}
+.pagination {
+  display: inline-block;
+  text-align: right;
+}
+ul {
+  list-style: none;
+}
+
+.pagination li {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+}
+
+.pagination li.active {
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
+}
+.pagination li:hover:not(.active) {
+  background-color: #ddd;
+}
+.search-container {
+  float: right;
+  position: absolute;
+  top: 16px;
+  right: 12px;
+}
