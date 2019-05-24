@@ -23,7 +23,7 @@ class App extends React.Component {
         for (let index = 0; index < data.data / 10; index++) {
           newArr[index] = index + 1;
         }
-        this.setState({ pages: newArr, isLoading:false });
+        this.setState({ pages: newArr, isLoading: false });
       }
       )
       .catch(error => this.setState({ error, isLoading: false }));
@@ -33,15 +33,15 @@ class App extends React.Component {
     return (
       <div className="list">
         <div className="topnav">
-          <span>Movies List</span>
+          <span>Employee List</span>
         </div>
         {this.state.isLoading ? <div>Loading...</div> :
           <div className="listHead">
             <Table
-            pageNo={this.state.pageNo}
-            key={this.state.key}
-            searchKey={this.state.search}
-          />
+              pageNo={this.state.pageNo}
+              key={this.state.key}
+              searchKey={this.state.search}
+            />
           </div>}
         <div className="footer">
           <ul className="pagination">

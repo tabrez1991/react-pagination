@@ -3,10 +3,14 @@ This is the demo how to use pagination concept in react and here feature of sort
 
 # BackEnd
 1. Clone or Download this repo.
-2. Go to in node folder and run `npm install`
-3. Now run  `node app.js`.
+2. Go to Nodejs folder and run `npm install`
+3. Now run  `node_modules/.bin/babel-node app.js`.
 
 Now your server is start, you can fetch the data.
 
 # FrontEnd
-1. 
+1. Go to Reactjs folder and run `npm install`.
+2. Now run `npm start`.
+
+
+
